@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Chatbot UI</title>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link href="css/bootstrap-4.3.1.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="chatstyle.css">
+  
+</head>
+<body>
+	<div class="chat-container">
+		
+		<div class="chat-history">
+			
+		</div>
+		<div class="chat-input">
+			<input type="text" id="user-input" onkeyup="ChangeSendIcon(this)"  style="display: none;">
+			<button id="voice-input-button" class="audio" style="align-items: center;">
+				<i style="cursor:pointer;" id="audio" onkeyup="ChangeSendIcon(this)"  class="fas fa-microphone fa-2x"></i>
+        
+			</button>
+			
+		</div>
+	</div>
+
+    <script src="chat.js"></script>
+
+</body>
+</html>
